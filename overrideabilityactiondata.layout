@@ -1,0 +1,26 @@
+// PC/Steam patch 1 handling code @ FFT_enhanced.exe+eea6e50 (14eea6e50)
+// Switch v0 handling code @ FFT_enhanced.nso+1e21b0 (71001e21b0)
+
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed
+use_base_row_id|true
+
+// not used in game code
+add_column|unused|int
+
+// each array is two values; if positive they patch their respective flags field
+// ie: Flags12[0] refers to Flags1, Flags12[1] refers to Flags2
+add_column|Flags12|short[]
+add_column|Flags32|short[]
+
+// if the value is positive, it's cast to byte and patches their respective field
+add_column|Range|short
+add_column|EffectArea|short
+add_column|Vertical|short
+add_column|Element|short
+add_column|Formula|short
+add_column|X|short
+add_column|Y|short
+add_column|InflictStatus|short
+add_column|CT|short
+add_column|MPCost|short
