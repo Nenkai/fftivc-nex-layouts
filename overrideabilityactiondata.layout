@@ -8,12 +8,12 @@ use_base_row_id|true
 // not used in game code
 add_column|unused|int
 
-// each array is two values; if positive they patch their respective flags field
+// each array is two values; if 0 or greater they patch their respective flags field
 // ie: Flags12[0] refers to Flags1, Flags12[1] refers to Flags2
 add_column|Flags12|short[]
 add_column|Flags34|short[]
 
-// if the value is positive, it's cast to byte and patches their respective field
+// if the value is 0 or greater, it's cast to byte and patches their respective field
 add_column|Range|short
 add_column|EffectArea|short
 add_column|Vertical|short
