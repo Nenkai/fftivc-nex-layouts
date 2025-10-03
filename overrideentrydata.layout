@@ -1,8 +1,24 @@
 // Switch v0 main handling code @ FFT_enhanced.nso+7ba14 (710007ba14)
+//   Unknown4C handling code @ FFT_enhanced.nso+3470c8 (71003470c8)
+//   Unknown54 handling code @ FFT_enhanced.nso+3470a0 (71003470a0)
+//   Unknown5C, Unknown64, Unknown6C, Unknown74 handling code @ FFT_enhanced.nso+7bcf8 (710007bcf8)
+//   Unknown9A handling code @ FFT_enhanced.nso+346fbc (7100346fbc)
 
 set_table_type|DoubleKeyed
 set_table_category|DoubleKeyed
 use_base_row_id|false
+
+define_struct|Unknown4C_Struct
+add_struct_column|Unknown0|int
+add_struct_column|Unknown4|int
+end_struct|
+
+define_struct|Unknown54_Struct
+add_struct_column|Unknown0|int
+add_struct_column|Unknown4|int
+add_struct_column|Unknown8|int
+add_struct_column|UnknownC|int
+end_struct|
 
 // not used in game code
 add_column|Unknown00|int                 // 00
@@ -26,8 +42,8 @@ add_column|LeftHand|int                  // 3C - ' '
 add_column|InitialDirection|int          // 40 - if not 255, it's cast to byte and patches that respective field with the lower 4 bits (& 0xF)
 add_column|UnitId+characontrolid+Id|int  // 44 - if not zero, and the row exists in the nxd table, UnitId from that row is cast to byte and patches that respective field
 add_column|Present|int                   // 48 - if not 255, it's cast to byte and patches that respective field with the mask 0xC (b00001100)
-add_column|Unknown4C|int[]               // 4C - ?
-add_column|Unknown54|int[]               // 54 - ?
+add_column|Unknown4C|Unknown4C_Struct[]  // 4C - ?
+add_column|Unknown54|Unknown54_Struct[]  // 54 - ?
 add_column|Unknown5C|short[]             // 5C - ?
 add_column|Unknown64|short[]             // 64 - ?
 add_column|Unknown6C|short[]             // 6C - ?
