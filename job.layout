@@ -1,0 +1,20 @@
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed_Localized
+use_base_row_id|true
+
+add_column|Unknown1|int               // 0
+add_column|Unknown2|string            // 4
+add_column|Name|string|rel            // 8
+add_column|Unknown4|string|rel|-4     // C
+add_column|Description|string|rel|-8  // 10
+add_column|Unknown6|string|rel|-12    // 14
+add_column|jobtype+Id|int             // 18
+add_column|Unknown8|int               // 1C
+add_column|jobcommand+Id|uint         // 20
+add_column|Unknown10|int              // 24
+add_column|Unknown11|int              // 28
+add_column|TexturePartsIndex|uint     // 2C - ui/ffto/common/face/textureparts/wldface_%JOB_ID%_%INDEX%_uitx.utexpt
+add_column|uijobabilityhelp+Id|uint   // 30
+add_column|egg+Id|uint                // 34
+add_column|Unknown15|int              // 38
+add_column|HideJobTree|int            // 3C
