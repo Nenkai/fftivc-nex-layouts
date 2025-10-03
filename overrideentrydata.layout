@@ -1,0 +1,61 @@
+// Switch v0 main handling code @ FFT_enhanced.nso+7ba14 (710007ba14)
+
+set_table_type|DoubleKeyed
+set_table_category|DoubleKeyed
+use_base_row_id|false
+
+// not used in game code
+add_column|Unknown00|int                 // 00
+
+add_column|Unknown04|string              // 04
+
+add_column|Spriteset|uint                // 08 - if not zero, it's cast to byte and patches that respective field
+add_column|Unknown4|uint                 // 0C - ??
+add_column|MainJob|uint                  // 10 - if not zero, it's cast to byte and patches that respective field
+add_column|JobUnlock|uint                // 14 - if not 20, it's cast to byte and patches that respective field
+add_column|EntryUnknown1D|int            // 18 - if zero or greater, it's cast to byte and patches that respective field
+add_column|SecondarySkillset|int         // 1C - if zero or greater, it's cast to ushort and patches that respective field
+add_column|Reaction|int                  // 20 - ' '
+add_column|Support|int                   // 24 - ' '
+add_column|Movement|int                  // 28 - ' '
+add_column|Head|int                      // 2C - if zero or greater, it's cast to byte and patches that respective field
+add_column|Body|int                      // 30 - ' '
+add_column|Accessory|int                 // 34 - ' '
+add_column|RightHand|int                 // 38 - ' '
+add_column|LeftHand|int                  // 3C - ' '
+add_column|InitialDirection|int          // 40 - if not 255, it's cast to byte and patches that respective field with the lower 4 bits (& 0xF)
+add_column|UnitId+characontrolid+Id|int  // 44 - if not zero, and the row exists in the nxd table, UnitId from that row is cast to byte and patches that respective field
+add_column|Present|int                   // 48 - if not 255, it's cast to byte and patches that respective field with the mask 0xC (b00001100)
+add_column|Unknown4C|int[]               // 4C - ?
+add_column|Unknown54|int[]               // 54 - ?
+add_column|Unknown5C|short[]             // 5C - ?
+add_column|Unknown64|short[]             // 64 - ?
+add_column|Unknown6C|short[]             // 6C - ?
+add_column|Unknown74|short[]             // 74 - ?
+add_column|Level|short                   // 7C - if greater than zero, it's cast to byte and patches that respective field
+add_column|JobLevel|short                // 7E - ' '
+add_column|Unknown80|byte                // 80 - ?
+add_column|Unknown81|byte                // 81 - ?
+add_column|Bravery|short                 // 82 - if zero or greater, it's cast to byte and patches that respective field
+add_column|Faith|short                   // 84 - ' '
+add_column|Unknown86|byte                // 86 - ?
+add_column|Unknown87|byte                // 87 - ?
+add_column|PositionX|short               // 88 - if zero or greater, it's cast to byte and patches that respective field
+add_column|PositionY|short               // 8A - ' '
+add_column|HigherElevation|byte          // 8C - if 0 or 1, patches the uppermost bit in InitialDirection
+add_column|Disable|byte                  // 8D - if not zero, patches Spriteset to 0 and doesn't patch any other fields (except the arrays)
+add_column|Unknown8E|byte                // 8E - initial value of UnknownFlags (uint), not sure how it's used
+add_column|Unknown8F|byte                // 8F - if not zero, sets flag 1 in UnknownFlags (UnknownFlags | 0x002)
+add_column|Unknown90|byte                // 90 - if not zero, sets flag 2 in UnknownFlags (UnknownFlags | 0x004)
+add_column|Unknown91|byte                // 91 - if not zero, sets flag 3 in UnknownFlags (UnknownFlags | 0x008)
+add_column|Unknown92|byte                // 92 - if not zero, sets flag 4 in UnknownFlags (UnknownFlags | 0x010)
+add_column|Unknown93|byte                // 93 - if not zero, sets flag 5 in UnknownFlags (UnknownFlags | 0x020)
+add_column|Unknown94|byte                // 94 - if not zero, sets flag 6 in UnknownFlags (UnknownFlags | 0x040)
+add_column|Unknown95|byte                // 95 - if not zero, sets flag 7 in UnknownFlags (UnknownFlags | 0x080)
+add_column|Unknown96|byte                // 96 - if not zero, sets flag 8 in UnknownFlags (UnknownFlags | 0x100)
+add_column|Unknown97|byte                // 97 - if not zero, sets flag 9 in UnknownFlags (UnknownFlags | 0x200)
+add_column|LoadFormation|byte            // 98 - if not zero, sets the LoadFormation flag in the first Flags field
+add_column|Unknown99|byte                // 99 - if not zero, sets flag 10 in UnknownFlags (UnknownFlags | 0x400)
+add_column|Unknown9A|byte                // 9A - ? probably struct padding
+add_column|Unknown9B|byte                // 9B - ? probably struct padding
+add_column|Unknown9C|byte                // 9C - ? probably struct padding
