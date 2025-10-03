@@ -1,0 +1,18 @@
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed
+use_base_row_id|true
+
+add_column|DLCFlags|int
+add_column|Unknown4|int        // This gets divided by 1000.0, ref: to 41 8B 42 ? 0F 57 C0
+add_column|SeadEventId|int     // ref: 41 8B 52 ? 45 33 C0 48 8B 0D
+add_column|Comment|string
+
+// Inline array, 8 types. refer to function: 48 89 5C 24 ? 48 89 6C 24 ? 56 57 41 57 48 83 EC ? 48 8B 05 ? ? ? ? 48 89 CD
+add_column|Unknown10|byte
+add_column|Unknown11|byte
+add_column|Unknown12|byte
+add_column|Unknown13|byte
+add_column|Unknown14|byte
+add_column|Unknown15|byte
+add_column|Unknown16|byte
+add_column|Unknown17|byte

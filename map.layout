@@ -1,0 +1,39 @@
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed
+use_base_row_id|false
+
+// Size: 0x48
+define_struct|UnknownMapStruct|
+add_struct_column|Unknown0|int
+add_struct_column|Unknown4|int
+add_struct_column|PlaceNameId|int          // 8 - ref: 8B 4F ? E8 ? ? ? ? 48 8B D0 48 8B CE
+add_struct_column|MapVariationEventId|int  // C - ref: 8B 56 ? 49 8B C8
+add_struct_column|Unknown10|int
+add_struct_column|TownId|int               // 14 - ref: 8B 57 ? B9 ? ? ? ? E8 ? ? ? ? 48 85 C0 74
+add_struct_column|PostEffectLUTId|int      // 18 - ref: 8B 42 ? 89 81 ? ? ? ? 8B 42 ? 41 8B D0
+add_struct_column|PostEffectDepthLUTId|int // 1C - ref: 8B 42 ? 41 8B D0
+add_struct_column|Unknown20|float          // 20 - ref: F3 0F 10 46 ? F3 0F 11 05
+add_struct_column|UserSituationId|int      // 24 - ref: 8B 56 ? 85 D2 74 ? E8 ? ? ? ? 84 C0
+add_struct_column|PostEffectDOFId|int      // 28 - ref: 44 8B 42 ? 48 8B F9
+add_struct_column|DepthBiasId|int          // 2C - ref: 8B 56 ? 85 D2 74 ? E8 ? ? ? ? F3 0F 11 83
+add_struct_column|Unknown30|float          // 30 - ref: F3 0F 10 5A ? 48 8B 0D
+add_struct_column|Unknown34|float          // 34 - ref: F3 0F 10 62 ? F3 0F 59 1D
+add_struct_column|Unknown38|short          // 38 - ref (+ other shorts): 0F B7 42 ? 44 0F B7 42
+add_struct_column|Unknown3A|short
+add_struct_column|Unknown3C|short
+add_struct_column|Unknown3E|short
+add_struct_column|Unknown40|short
+add_struct_column|Unknown42|short
+add_struct_column|Unknown44|byte           // 44
+add_struct_column|Unknown45|byte           // 45 - ref: 0F B6 4E ? 48 8B 1D
+add_struct_column|Unknown46|byte           // 46 - ref: 8A 46 ? 88 81 ? ? ? ? 66 C7 83
+add_struct_column|Unknown47|byte           // 47 - bool? ref: 80 7E ? ? 66 C7 83
+end_struct|
+
+add_column|DLCFlags|int
+add_column|Comment|string
+add_column|Unknown8|int
+add_column|UnknownC|int
+add_column|Unknown10|int
+add_column|Unknown14|UnknownMapStruct[]
+add_column|Unknown1C|int

@@ -1,0 +1,10 @@
+set_table_type|DoubleKeyed
+set_table_category|DoubleKeyed
+use_base_row_id|true
+
+add_column|DLCFlags|int
+add_column|Unknown4|int                       // Checked against 32, 40, 52, 60, Union32 maybe? ref: 8B 40 ? 83 F8 ? 0F 84
+add_column|Unknown8|int
+add_column|UnknownC|int
+add_column|RefinedBgMeshPolygonCondId|int     // ref: 8B 70 ? 75 ? 48 8B 0D ? ? ? ? 48 85 C9 0F 84
+add_column|Unknown14|int

@@ -1,0 +1,10 @@
+set_table_type|DoubleKeyed
+set_table_category|DoubleKeyed
+use_base_row_id|false
+
+add_column|DLCFlags|int
+add_column|CharaControlId|int   // ref: 8B 68 ? 75 ? 48 8B 0D ? ? ? ? 48 85 C9 0F 84 ? ? ? ? BA ? ? ? ? E8 ? ? ? ? 48 89 05 ? ? ? ? 48 85 C0 0F 84 ? ? ? ? 48 8B 0D ? ? ? ? 8B D5 E8 ? ? ? ? 4C 8B C0
+add_column|Unknown8|short
+add_column|UnknownA|short                      
+add_column|UnknownC|short                      
+add_column|UnknownE|short

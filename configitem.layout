@@ -1,0 +1,23 @@
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed
+use_base_row_id|true
+
+add_column|DLCFlags|int
+add_column|Unknown4|int
+add_column|Unknown8|int
+add_column|UnknownC|int
+add_column|Unknown10|int
+add_column|Unknown14|int
+add_column|Unknown18|int
+add_column|Unknown1C|int
+add_column|Unknown20|int[]
+add_column|ConfigPadListId|int    // ref: 44 8B 70 ? 33 DB
+add_column|Unknown2C|int
+add_column|Unknown30|int
+add_column|Unknown34|int
+add_column|Unknown38|int
+add_column|Unknown3C|int
+add_column|Unknown40|int
+add_column|Unknown44|int
+add_column|Unknown48|int
+

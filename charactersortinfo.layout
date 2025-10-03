@@ -4,7 +4,7 @@ use_base_row_id|true
 
 // this table is used to govern sorting of available jobs on the job selection screen
 
-add_column|Unknown1|int
+add_column|DLCFlags|int
 add_column|Unknown2|short
 add_column|Unknown3|byte   // probably actually a bool
 add_column|Unknown4|byte

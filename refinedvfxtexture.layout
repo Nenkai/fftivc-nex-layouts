@@ -1,0 +1,16 @@
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed
+use_base_row_id|true
+
+add_column|DLCFlags|int
+add_column|Comment|string
+add_column|Unknown8|float
+add_column|DepthBiasId|int                   // 0C - ref: 8B 50 ? 48 8B 3D ? ? ? ? E8
+add_column|RefinedVfxCameraControlId|int     // 10 - ref: 8B 58 ? 48 8B 05 ? ? ? ? 48 85 C0 75 ? 48 8B 0D ? ? ? ? 48 85 C9 0F 84 ? ? ? ? BA ? ? ? ? E8 ? ? ? ? 48 89 05 ? ? ? ? 48 85 C0 0F 84 ? ? ? ? 8B D3 48 8B C8 E8 ? ? ? ? 4C 8B C0
+add_column|Unknown14|float
+add_column|Unknown18|byte                     // 18 - bool? ref: 48 89 5C 24 ? 57 48 83 EC ? 33 DB 8B F9 85 C9 7E ? 48 8B 05 ? ? ? ? 48 85 C0 75 ? 48 8B 0D ? ? ? ? 48 85 C9 74 ? BA ? ? ? ? E8 ? ? ? ? 48 89 05 ? ? ? ? 48 85 C0 74 ? 8B D7 48 8B C8 E8 ? ? ? ? 4C 8B C0 48 85 C0 74 ? 48 39 18 7C ? 48 8B C8 E8 ? ? ? ? 48 85 C0 74 ? 49 39 18 7C ? 49 8B C8 E8 ? ? ? ? EB ? 48 8D 05 ? ? ? ? 38 58 ? 0F 95 C3 8B C3 EB ? 33 C0 48 8B 5C 24 ? 48 83 C4 ? 5F C3 CC CC CC 48 89 5C 24 ? 57 48 83 EC ? 33 DB 8B F9 85 C9 7E ? 48 8B 05 ? ? ? ? 48 85 C0 75 ? 48 8B 0D ? ? ? ? 48 85 C9 74 ? BA ? ? ? ? E8 ? ? ? ? 48 89 05 ? ? ? ? 48 85 C0 74 ? 8B D7 48 8B C8 E8 ? ? ? ? 4C 8B C0 48 85 C0 74 ? 48 39 18 7C ? 48 8B C8 E8 ? ? ? ? 48 85 C0 74 ? 49 39 18 7C ? 49 8B C8 E8 ? ? ? ? EB ? 48 8D 05 ? ? ? ? 38 58 ? 0F 95 C3 8B C3 EB ? 33 C0 48 8B 5C 24 ? 48 83 C4 ? 5F C3 CC CC CC 48 89 5C 24 ? 57
+add_column|Unknown19|byte                     // 19 - bool? ref: 38 58 ? 0F 95 C3 8B C3 EB ? 33 C0 48 8B 5C 24 ? 48 83 C4 ? 5F C3 CC CC CC 48 89 5C 24 ? 57 48 83 EC ? 33 DB 8B F9 85 C9 7E ? 48 8B 05 ? ? ? ? 48 85 C0 75 ? 48 8B 0D ? ? ? ? 48 85 C9 74 ? BA ? ? ? ? E8 ? ? ? ? 48 89 05 ? ? ? ? 48 85 C0 74 ? 8B D7 48 8B C8 E8 ? ? ? ? 4C 8B C0 48 85 C0 74 ? 48 39 18 7C ? 48 8B C8 E8 ? ? ? ? 48 85 C0 74 ? 49 39 18 7C ? 49 8B C8 E8 ? ? ? ? EB ? 48 8D 05 ? ? ? ? 38 58 ? 0F 95 C3 8B C3 EB ? 33 C0 48 8B 5C 24 ? 48 83 C4 ? 5F C3 CC CC CC 48 89 5C 24 ? 48 89 74 24
+add_column|Unknown1A|byte                     // 1A - ref: 8A 40 ? 88 47 ? 4C 39 3B 7C ? 48 8B CB E8 ? ? ? ? EB ? 48 8B C6 8A 40
+add_column|Unknown1B|byte                    // 1B - ref: 8A 40 ? 88 47 ? 4C 39 3B 7C ? 48 8B CB E8 ? ? ? ? EB ? 48 8B C6 8B 50
+add_column|Unknown1C|byte                    // 1C - bool? ref: 38 58 ? 0F 95 C3 8B C3 EB ? 33 C0 48 8B 5C 24 ? 48 83 C4 ? 5F C3 CC CC CC 48 89 5C 24 ? 48 89 74 24
+// <implicit 3 byte padding>

@@ -1,0 +1,11 @@
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed
+use_base_row_id|true
+
+add_column|DLCFlags|int
+add_column|RefinedBgUiTextureFramesIds|int[]   // ref: 49 03 C8 42 8B 3C B9
+add_column|UnknownC|short                      // ref: 0F B7 40 ? F3 0F 10 0D
+add_column|UnknownE|short                      // ref: 0F B7 40 ? 42 89 84 AE
+add_column|Unknown10|byte                       // ref: 8A 40 ? 42 88 84 2E
+add_column|Unknown11|byte                       // ref: 8A 40 ? 45 33 C0
+// <implcit 2 bytes padding>
