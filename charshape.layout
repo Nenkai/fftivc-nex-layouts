@@ -1,0 +1,24 @@
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed
+use_base_row_id|true
+
+// not used in game code
+add_column|unused|int
+
+add_column|Unknown1|string
+add_column|charshapeshadowsize+Id1|uint
+add_column|charclut+Id|uint
+add_column|charshapelutparam+Id1|uint
+add_column|charshapeshadowsize+Id2|uint
+add_column|charshapelutparam+Id2|uint
+add_column|charshapelutparam+Id3|uint
+add_column|charshapelutparam+Id4|uint
+add_column|Unknown9|uint
+add_column|Unknown10|sbyte
+add_column|Unknown11|byte
+add_column|Unknown12|byte
+add_column|Unknown13|byte
+add_column|Height|byte
+add_column|Unknown15|byte
+add_column|Unknown16|byte
+add_column|Unknown17|byte
