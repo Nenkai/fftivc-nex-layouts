@@ -1,0 +1,16 @@
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed_Localized
+use_base_row_id|true
+
+add_column|DLCFlags|int
+add_column|Name|string|rel
+add_column|NameSingular|string|rel|-4
+add_column|NamePlural|string|rel|-8
+add_column|Description|string|rel|-12
+add_column|Name2|string|rel|-16
+add_column|Unknown18|int                  // 18 - TODO: Figure out column data type
+add_column|UiStatusEffectId|int           // 1C - ref: 8B 53 ? 48 8B 0D ? ? ? ? E8 ? ? ? ? 48 8B F8
+add_column|Comment|string
+add_column|Unknown24|int                  // 24 - ref: 8B 40 ? FF C0
+add_column|SortOrder|int                  // 28 - ref: 41 39 4C 24
+add_column|Unknown2C|int

@@ -1,0 +1,10 @@
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed
+use_base_row_id|false
+
+add_column|DLCFlags|int
+add_column|Comment|string
+
+// Has hardcoded checks for >= 100 & <= 103, 1000, 
+add_column|Unknown8|byte      // 8 - ref: 8A 40 ? 3C ? 72, ref 2: 8A 40 ? 88 47 ? 89 2E
+// <implicit 3 byte padding>

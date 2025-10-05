@@ -1,0 +1,14 @@
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed_Localized
+use_base_row_id|true
+
+add_column|DLCFlags|int
+add_column|Title|string|rel
+add_column|Unknown8|string|rel|-4
+add_column|UnknownC|string|rel|-8
+add_column|Unknown10|string|rel|-12
+add_column|Unknown14|string|rel|-16
+add_column|Unknown18|string|rel|-20
+add_column|Unknown1C|string|rel|-24
+add_column|ProfitClientNameId|int           // ref: 8B 58 ? 48 8B 05 ? ? ? ? 48 85 C0 75 ? 48 8B 0D ? ? ? ? 48 85 C9 74 ? BA ? ? ? ? E8 ? ? ? ? 48 89 05 ? ? ? ? 48 85 C0 74 ? 8B D3 48 8B C8 E8 ? ? ? ? 4C 8B C0
+add_column|Unknown24|int                    // ref: 8B 40 ? 41 89 40 ? 4C 8B 05 ? ? ? ? FF C7

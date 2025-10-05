@@ -1,0 +1,10 @@
+// ref: 48 89 5C 24 ? 55 56 57 48 83 EC ? 48 8B 05 ? ? ? ? 44 88 C7
+
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed
+use_base_row_id|true
+
+add_column|DLCFlags|int
+add_column|Comment|string
+add_column|IconFilePath|string                 // 8 - ui/ffto/icon/%s or UITextureParts://ui/ffto/icon/%s, ref: 4C 63 48 ? 4C 8D 05 ? ? ? ? 49 01 C1
+add_column|UnknownC|int                        // C - ref: 8B 40 ? 89 81 ? ? ? ? 40 84 F6

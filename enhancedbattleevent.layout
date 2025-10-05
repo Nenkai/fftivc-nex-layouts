@@ -1,0 +1,25 @@
+// Handled at: 40 53 55 56 57 41 54 41 55 41 56 41 57 48 83 EC ? BF
+set_table_type|TripleKeyed
+set_table_category|TripleKeyed
+use_base_row_id|false
+
+// Key1 = Scenario ID
+// Key2 = Conditional Set ID
+// Key3 = Conditional
+
+add_column|DLCFlags|int
+
+// hardcoded checks against: 1, 4, 5, 6, 7, 8, 11, 24, 25, 28, 29, 30, 31, 32, 34, 37
+add_column|UnkType4|short       // 4 - ref: 44 0F BF 58
+
+add_column|CharaControlId|short // 8 - ref: 44 0F BF 70
+add_column|UnknownA|short
+add_column|UnknownC|short       // C - ref: 0F B7 68 ? 4D 85 C0
+add_column|UnknownE|short
+add_column|Unknown10|short      // 10 - ref: 44 0F B7 50 ? 4D 85 C0
+add_column|Unknown12|short                   
+add_column|Unknown14|short[]    // 14 - checks for 3 elems if type 24 or 37? ref: 83 78 ? ? 0F 85 ? ? ? ? 4C 8B CD
+add_column|Unknown1C|short      // 1C - ref: 44 0F B7 48 ? 4D 85 C0
+add_column|Unknown1E|short
+add_column|Unknown20|short      // 20 - ref: 0F B7 50 ? 41 8B CB
+add_column|Comment|string

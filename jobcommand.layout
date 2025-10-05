@@ -1,0 +1,20 @@
+// ref: 40 53 48 83 EC ? 48 8B 05 ? ? ? ? 89 CB
+
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed_Localized
+use_base_row_id|true
+
+add_column|DLCFlags|int
+
+// Hardcoded checks
+add_column|Unknown4|int                    // 4 - ref: 8B 50 ? 44 8B C2
+
+add_column|Name|string|rel
+add_column|Description|string|rel|-4
+add_column|Description2|string|rel|-8
+
+// Hardcoded checks - 5
+add_column|Unknown14|int                   // 14 - ref: 39 4F ? 74 ? 32 C0 EB ? B0 ? 48 8B 5C 24 ? 48 83 C4 ? 5F C3 CC CC 40 55
+add_column|Comment|string
+add_column|Unknown1C|int                   // 1C - ref: 8B 50 ? 85 D2 74 ? B9
+add_column|UiDialogId|int                  // 20 - ref: 0F 47 58

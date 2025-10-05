@@ -1,0 +1,11 @@
+// ref: 48 89 5C 24 ? 55 56 57 48 81 EC ? ? ? ? 48 8B 05 ? ? ? ? 48 31 E0
+
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed_Localized
+use_base_row_id|true
+
+add_column|DLCFlags|int
+add_column|AbilityId|int                 // 4 - ref: 8B 4B ? E8 ? ? ? ? 48 89 C5
+add_column|Name|string|rel
+add_column|Description|string|rel|-4
+add_column|IconId|int                    // 14 - ref: 8B 4B ? 41 B9 ? ? ? ? 44 03 0D
