@@ -1,5 +1,5 @@
 // Switch v0 main handling code @ FFT_enhanced.nso+7ba14 (710007ba14)
-
+table_name|OverrideEntryData
 set_table_type|DoubleKeyed
 set_table_category|DoubleKeyed
 use_base_row_id|false

@@ -1,5 +1,5 @@
 // ref: 48 89 5C 24 ? 55 56 57 48 81 EC ? ? ? ? 48 8B 05 ? ? ? ? 48 31 E0
-
+table_name|Land
 set_table_type|SingleKeyed
 set_table_category|SingleKeyed_Localized
 use_base_row_id|true

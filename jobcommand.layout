@@ -1,5 +1,5 @@
 // ref: 40 53 48 83 EC ? 48 8B 05 ? ? ? ? 89 CB
-
+table_name|JobCommand
 set_table_type|SingleKeyed
 set_table_category|SingleKeyed_Localized
 use_base_row_id|true

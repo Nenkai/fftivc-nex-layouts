@@ -1,5 +1,5 @@
 // ref: 48 89 5C 24 ? 55 56 57 48 83 EC ? 48 8B 05 ? ? ? ? 44 88 C7
-
+table_name|Icon
 set_table_type|SingleKeyed
 set_table_category|SingleKeyed
 use_base_row_id|true

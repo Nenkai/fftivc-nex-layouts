@@ -1,0 +1,14 @@
+table_name|Achievement
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed_Localized
+use_base_row_id|true
+
+// Achievement 9 is hardcoded - ref: BA ? ? ? ? 48 8B C8 E8 ? ? ? ? 48 85 C0 74 ? 48 83 38
+
+add_column|DLCFlags|int
+add_column|TelemetryAchievementId|int   // 4 - ref: 8B 68 ? 75 ? 48 8B 0D ? ? ? ? 48 85 C9 0F 84 ? ? ? ? BA ? ? ? ? E8 ? ? ? ? 48 89 05 ? ? ? ? 48 85 C0 0F 84 ? ? ? ? 48 8B 0D ? ? ? ? 8B D5 E8 ? ? ? ? 48 8B D8
+add_column|Unknown8|int                 // 8 - ref: 8B 48 ? 48 8B 05 ? ? ? ? F6 40 ? ? 74 ? 44 8B 5C 88
+add_column|UnknownC|int
+add_column|NovelRelated|int             // 10 - ref: 8B 40 ? 39 43 ? 0F 94 C0 EB ? 32 C0 48 8B 5C 24 ? 48 83 C4 ? 5F C3 48 89 5C 24
+add_column|JournalRelated|int           // 14 - ref: 8B 40 ? 39 43 ? 0F 94 C0 EB ? 32 C0 48 8B 5C 24 ? 48 83 C4 ? 5F C3 E9
+add_column|Description|string|rel

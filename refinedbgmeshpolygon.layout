@@ -1,3 +1,4 @@
+table_name|RefinedBgMeshPolygon
 set_table_type|DoubleKeyed
 set_table_category|DoubleKeyed
 use_base_row_id|true

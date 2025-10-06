@@ -1,6 +1,6 @@
 // PC/Steam patch 1 handling code @ FFT_enhanced.exe+eea6e50 (14eea6e50)
 // Switch v0 handling code @ FFT_enhanced.nso+1e21b0 (71001e21b0)
-
+table_name|OverrideAbilityActionData
 set_table_type|SingleKeyed
 set_table_category|SingleKeyed
 use_base_row_id|true

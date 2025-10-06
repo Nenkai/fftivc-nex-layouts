@@ -1,7 +1,8 @@
-table_name|Speaker
+table_name|DeepDungeon
 set_table_type|SingleKeyed
 set_table_category|SingleKeyed_Localized
-use_base_row_id|false
+use_base_row_id|true
 
 add_column|DLCFlags|int
 add_column|Name|string|rel
+add_column|Description|string|rel|-4

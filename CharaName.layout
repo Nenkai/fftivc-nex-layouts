@@ -1,0 +1,11 @@
+table_name|CharaName
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed_Localized
+use_base_row_id|true
+
+add_column|DLCFlags|int
+add_column|Comment|string
+add_column|Name|string|rel
+add_column|UnknownC|union       // C - 124, or 247 (voicepatternsituation) - ref: 48 8D 48 ? 48 83 C4
+add_column|UnkBool14|byte       // 14 - bool. ref: 80 78 ? ? 74 ? 48 85 FF
+// <implicit 3 byte padding>
