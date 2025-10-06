@@ -1,0 +1,10 @@
+table_name|GameProgress
+set_table_type|DoubleKeyed
+set_table_category|DoubleKeyed
+use_base_row_id|true
+
+add_column|DLCFlags|int
+add_column|Comment|string
+add_column|WorldMapProgressInfoIdK1|int     // 8 - ref: 45 8B 70 ? 48 85 C0
+add_column|WorldMapProgressInfoIdK2|int     // C - ref: 8B 78 ? 48 8B 05 ? ? ? ? 45 8B 70
+add_column|Unknown10|int                    // 10 - is this used?

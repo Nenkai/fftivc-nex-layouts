@@ -1,0 +1,10 @@
+table_name|PlaceName
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed_Localized
+use_base_row_id|false
+
+add_column|DLCFlags|int
+add_column|Comment|string
+add_column|PlaceNameId|int              // 8 - ref: 8B 70 ? 48 8B 05 ? ? ? ? 48 85 C0 75 ? 48 8B 0D ? ? ? ? 48 85 C9 74 ? 8D 50 ? E8 ? ? ? ? 48 89 05 ? ? ? ? 48 85 C0 74 ? 85 F6 74 ? 8B D6 48 8B C8 E8 ? ? ? ? 4C 8B C0 48 85 C0 74 ? 48 83 38
+add_column|Title|string|rel
+add_column|Unknown10|string|rel|-4

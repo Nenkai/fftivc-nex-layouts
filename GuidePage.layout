@@ -1,0 +1,10 @@
+table_name|GuidePage
+set_table_type|DoubleKeyed
+set_table_category|DoubleKeyed_Localized
+use_base_row_id|false
+
+add_column|DLCFlags|int
+add_column|Comment|string
+add_column|IconIds|int[]
+add_column|Unknown10|string|rel            // 10 - ref: 48 8D 4E ? 48 63 51
+add_column|Unknown14|string|rel|-4         // 14 - ref: 48 63 78 ? 48 83 C0

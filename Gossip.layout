@@ -1,0 +1,17 @@
+table_name|Gossip
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed_Localized
+use_base_row_id|true
+
+add_column|DLCFlags|int
+add_column|Unknown4|int           // 4 - ref: 8B 50 ? 85 D2 0F 84
+add_column|Unknown8|int           // 8 - ref: 44 8B 40 ? 45 85 C0
+add_column|Title|string|rel       // C - ref: 49 8D 47 ? 4C 63 00, ref2: 4C 8D 48 ? 48 8B CB
+add_column|Text|string|rel|-4     // 10 - ref: 4D 63 41 ? 49 63 11
+add_column|Unknown14|int[]        // 14 - Hardcoded check in 102?
+add_column|Unknown1C|int[]        // 1C - Must match number of elements in Unknown14. Gets multiplied by 10?
+add_column|UserSituationID|int    // 24 - 8B 50 ? 85 D2 74 ? E8 ? ? ? ? 84 C0 74 ? 80 7B
+add_column|IconId|int             // 28 - ref: 8B 56 ? 48 8D 4C 24 ? 41 B8
+add_column|UnkBool2C|byte         // 2C - ref: 80 7B ? ? 75 ? 85 F6
+// <implicit 3 byte padding>
+

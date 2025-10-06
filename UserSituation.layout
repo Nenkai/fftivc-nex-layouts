@@ -1,0 +1,51 @@
+/////////////////////////////////////////////////////
+// ref: 48 89 5C 24 ? 48 89 6C 24 ? 48 89 74 24 ? 57 41 54 41 55 41 56 41 57 48 83 EC ? 41 89 D6
+// Many row ids are hardcoded.
+/////////////////////////////////////////////////////
+table_name|UserSituation
+set_table_type|DoubleKeyed
+set_table_category|DoubleKeyed_Localized
+use_base_row_id|false
+
+add_column|DLCFlags|int
+add_column|Comment|string
+
+// 1 = return someArray[Index1] != 0
+// 2 = return someArray[Index1] == 0
+// 3 = return someArray2[Index1] == CheckValue1
+// 4 = return someArray2[Index1] <= CheckValue1
+// 5 = return someArray2[Index1] < CheckValue1
+// 6 = return someArray2[Index1] >= CheckValue1
+// 7 = return someArray2[Index1] > CheckValue1
+// 8 = return someArray3[Index1] >= CheckValue1 && someArray3[Index2] <= CheckValue2
+// 9 = return someArray3[Index1] >= CheckValue1 && someArray3[Index2] < CheckValue2
+// 10 = return someArray3[Index1] > CheckValue1 && someArray3[Index2] <= CheckValue2
+// 11 = return someArray3[Index1] > CheckValue1 && someArray3[Index2] < CheckValue2
+// 12 = return sub_232730(Index1) == 12    - sub_13A6F8 in WOTL Mobile 1.1.0, return value of read_eventflag
+// 13 = return sub_232730(Index1) == 13
+// 14 = return sub_232730(Index1) == 14
+// 15 = return sub_232730(Index1) == 15
+// 16 = return (sub_232730(Index1) & 0xFFFFFFFC) == 12;
+add_column|CheckType1|int                // 8
+add_column|CheckType2|int
+add_column|CheckType3|int
+
+add_column|Check1_Index1|union           // 14
+add_column|Check2_Index1|union
+add_column|Check3_Index1|union
+add_column|Check1_CheckValue1|int        // 2C
+add_column|Check2_CheckValue1|int
+add_column|Check3_CheckValue1|int
+
+add_column|Check1_Index2|union           // 38
+add_column|Check2_Index2|union
+add_column|Check3_Index2|union
+add_column|Check1_CheckValue2|int        // 50
+add_column|Check2_CheckValue2|int
+add_column|Check3_CheckValue2|int
+
+// If true, check for success, otherwise fail is passed
+add_column|Check1_IsTrueForSuccess|byte  // 5C
+add_column|Check2_IsTrueForSuccess|byte
+add_column|Check3_IsTrueForSuccess|byte
+// <implicit 1 byte padding>

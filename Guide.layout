@@ -1,0 +1,21 @@
+table_name|Guide
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed_Localized
+use_base_row_id|true
+
+// Hardcoded keys: 107, 113, 187, 225, 230, 3001
+
+add_column|DLCFlags|int
+add_column|Comment|string
+add_column|Unknown8|int           // 8 - ref: 41 8B 4B ? 83 E9 ? 74 ? 83 E9
+add_column|UnknownC|int           // C - ref: 83 78 ? ? 0F 82 ? ? ? ? 4D 85 C0 78 ? 48 8B CB E8 ? ? ? ? EB ? 49 8B C4, ref2: 8B 48 ? 83 F9 ? 0F 83
+add_column|GuidePageId|int        // 10 - ref: 8B 50 ? 44 8B C6
+add_column|Unknown14|int          // 14 - ref: 44 39 78 ? 74 ? 4D 85 C0 78 ? 48 8B CB E8 ? ? ? ? EB ? 49 8B C4 83 78
+add_column|UserSituationId|int    // 18 - ref: 8B 50 ? E8 ? ? ? ? 84 C0 74 ? 4C 39 3B 7C ? 48 8B CB E8 ? ? ? ? EB ? 49 8B C4
+add_column|UserSituationId2|int   // 1C - ref: 8B 53 ? E8 ? ? ? ? 84 C0 74 ? 89 FA
+add_column|Unknown20|float        // 20 - ref: F3 0F 10 40 ? 0F 2F 05 ? ? ? ? 76 ? 48 8B 46
+add_column|Title|string|rel
+add_column|SortOrder|short        // 28 - ref: 66 41 39 41
+add_column|Unknown2A|short        // 2A - no more than 0xB6? ref: 66 44 39 78 ? 0F 86 ? ? ? ? 4D 85 C0 78 ? 48 8B CB E8 ? ? ? ? 48 85 C0 0F 84 ? ? ? ? 4D 85 C0 78 ? 48 8B CB E8 ? ? ? ? EB ? 49 8B C4, ref2: 0F B7 50 ? 4C 8D 0D
+add_column|Unknown2C|byte         // 2C - ref: 41 80 79 ? ? 74 ? BA
+// <implicit 3 byte padding>

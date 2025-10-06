@@ -1,0 +1,17 @@
+table_name|WorldMapProgressInfo
+set_table_type|DoubleKeyed
+set_table_category|DoubleKeyed_Localized
+use_base_row_id|false
+
+add_column|DLCFlags|int
+add_column|Comment|string
+add_column|TownId1|int           // 8 - ref: 8B 40 ? 89 44 24 ? 4D 85 C0 78 ? 48 8B CF
+add_column|TownId2|int           // C - ref: 8B 40 ? 45 33 E4
+add_column|RouteIds|int[]
+add_column|Caption|string|rel
+add_column|UserSituationId1|int  // 1C - ref: 8B 50 ? E8 ? ? ? ? 48 8B 35
+add_column|Unknown20|int         // Is this used?
+add_column|Unknown24|int         // IS this used?
+add_column|Unknown28|byte
+add_column|UnkBool29|byte        // 29 - bool. ref: 80 78 ? ? 75 ? 83 EB
+// <implicit 2 byte padding>

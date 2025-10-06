@@ -1,0 +1,22 @@
+table_name|Town
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed_Localized
+use_base_row_id|true
+
+add_column|DLCFlags|int
+add_column|Description|string|rel
+add_column|Unknown8|int
+add_column|UnknownC|int
+add_column|Unknown10|int
+add_column|PlaceNameId|int      // 14 - ref: 8B 48 ? E8 ? ? ? ? 41 B9 ? ? ? ? 48 8D 4C 24 ? 4C 8B C0 41 8D 51 ? E8 ? ? ? ? 48 8B 55 ? C7 45
+add_column|Unknown18|string     // 18 - ref: 4C 63 48 ? 4C 03 C8 0F 84
+add_column|Unknown1C|int
+add_column|Unknown20|int        // 20 - ref: 8B 40 ? 89 44 24 ? EB ? 44 89 74 24
+add_column|Unknown24|int        // 24 - ref: 8B 50 ? 41 B0 ? 48 8B CB, ref2: 41 8B 45 ? 89 47 ? E8
+add_column|UserSituationId|int  // 28 - ref: 8B 50 ? 85 D2 74 ? E8 ? ? ? ? B2
+add_column|Unknown2C|short      // 2C - related to uiaddon:137. ref: 45 0F BF 48 ? 4C 8D 05
+add_column|Unknown2E|short
+add_column|Unknown30|byte       // 30 - Uses "Base%s" if true, otherwise "Point%s"? ref: 41 8A 45 ? 48 8D 95
+add_column|UnkBool31|byte       // 31 - bool. ref: 44 38 70 ? 0F 84 ? ? ? ? BF
+add_column|Unknown32|byte       // 32 - bool. ref: 44 38 70 ? 75 ? 44 88 74 24
+add_column|Unknown33|byte

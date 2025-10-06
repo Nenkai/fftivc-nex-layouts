@@ -1,0 +1,10 @@
+table_name|VoicePatternSituation
+set_table_type|DoubleKeyed
+set_table_category|DoubleKeyed_Localized
+use_base_row_id|true
+
+add_column|DLCFlags|int
+add_column|Comment|string
+add_column|UserSituationId|int       // 8 - ref: 8B 50 ? E8 ? ? ? ? 84 C0 75 ? 48 8B 2D
+add_column|UnknownC|int
+
