@@ -5,7 +5,7 @@ use_base_row_id|true
 
 add_column|DLCFlags|int
 add_column|Comment|string
-add_column|Unknown8|int              // 8 - ref: 8B 58 ? 48 C1 E3
+add_column|TabIndex|int              // 8 - ref: 8B 58 ? 48 C1 E3
 add_column|UnknownC|string           // C - Not relative. ref:: 49 63 79
 add_column|Title|string|rel          // 10 - ref: 49 8D 41 ? 48 63 38
-add_column|RefinedBgAnimId|int       // 14 - ref: 8B 78 ? 85 FF 74 ? 48 8B CB
+add_column|SoundEnhancedId|int       // 14 - ref: 8B 78 ? 85 FF 74 ? 48 8B CB

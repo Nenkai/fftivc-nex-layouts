@@ -7,24 +7,22 @@ add_column|DLCFlags|int
 add_column|Unknown4|int
 add_column|Unknown8|int
 add_column|UnknownC|int
-add_column|Unknown10|int
-add_column|Unknown14|int
-
-// Are the following columns even used?
-add_column|Unknown18|string
+add_column|MainKeyCode|int          // Windows Keycode https://learn.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes - ref: 45 0B 41 ? 0F 11 47, ref2: 83 78 ? ? 76 ? BA
+add_column|AlternateKeyCode|int     // Windows Keycode - ref: 41 0B 51 ? 0F 11 07
+add_column|Unknown18|string         // ref: 48 63 50 ? 4C 8B C7
 add_column|Unknown1C|string
 add_column|Unknown20|byte
 add_column|Unknown21|byte
-add_column|Unknown22|byte
-add_column|Unknown23|byte
-add_column|Unknown24|byte
-add_column|Unknown25|byte
-add_column|Unknown26|byte
-add_column|Unknown27|byte
-add_column|Unknown28|byte
-add_column|Unknown29|byte
-add_column|Unknown2A|byte
-add_column|Unknown2B|byte
-add_column|Unknown2C|byte
-add_column|Unknown2D|byte
+add_column|Unknown22|byte  
+add_column|MainKeyUnk23|byte        // flag 0x40000 - ref: 8A 48 ? 8A 40 ? 45 1B C0
+add_column|MainKeyUnk24|byte        // flag 0x10000 - ref: 41 8A 41 ? 1B C9 81 E1 ? ? ? ? 44 0B C1 F6 D8 41 8A 41
+add_column|MainKeyUnk25|byte        // flag 0x20000 - ref: 8A 40 ? 45 1B C0
+add_column|MainKeyUnk26|byte        // flag 0x80000 - ref: 8A 48 ? 0F 57 C0
+add_column|AlternateKeyUnk27|byte   // flag 0x40000 - ref: 41 8A 41 ? 1B D2
+add_column|AlternateKeyUnk28|byte   // flag 0x10000 - ref: 41 8A 41 ? 1B C9 81 E1 ? ? ? ? 0B D1 F6 D8 41 8A 41 ? 1B C9 81 E1 ? ? ? ? 0B D1 F6 D8 1B C9
+add_column|AlternateKeyUnk29|byte   // flag 0x20000 - ref: 41 8A 41 ? 1B C9 81 E1 ? ? ? ? 0B D1 F6 D8 41 8A 41 ? 1B C9 81 E1 ? ? ? ? 0B D1 F6 D8 41 8A 41
+add_column|Unknown2A|byte           // ref: 8A 48 ? F6 D9 1B D2
+add_column|Unknown2B|byte           // ref: 44 38 48 ? 41 8B C2
+add_column|Unknown2C|byte           // flag 0x80000 - ref: 41 8A 41 ? F6 D8 41 8A 41
+add_column|Unknown2D|byte           // flag 0x100000 - ref: 41 8A 41 ? 1B C9 81 E1 ? ? ? ? 44 0B C1 F6 D8 1B C9
 // <implicit 2 bytes padding>

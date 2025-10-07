@@ -1,0 +1,11 @@
+table_name|Resolution
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed
+use_base_row_id|true
+
+add_column|DLCFlags|int
+add_column|Width|int
+add_column|Height|int
+add_column|Comment|string
+
+

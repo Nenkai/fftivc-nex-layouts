@@ -1,0 +1,14 @@
+table_name|SeDefine
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed
+use_base_row_id|true
+
+add_column|DLCFlags|int
+add_column|Comment|string
+
+// valid options:
+// 102
+// 350
+// 382 - Jingle
+// 384
+add_column|IdUnion|union       // ref: 48 83 EC ? B9 ? ? ? ? 03 0D - kinda messed up by denuvo but otherwise 0x149507810 (base release)

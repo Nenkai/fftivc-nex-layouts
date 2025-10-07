@@ -1,0 +1,9 @@
+table_name|ScenarioId
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed
+use_base_row_id|false
+
+add_column|DLCFlags|int
+add_column|EventIds|int[]   // 8 - ref: 44 39 76 ? 0F 8E
+add_column|UnknownC|int     // C - ref: 8B 40 ? 39 46 ? 74
+

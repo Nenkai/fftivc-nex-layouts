@@ -1,0 +1,8 @@
+table_name|Battle
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed
+use_base_row_id|false
+
+// Unused table?
+
+add_column|DLCFlags|int

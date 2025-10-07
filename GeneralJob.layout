@@ -1,0 +1,55 @@
+table_name|GeneralJob
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed
+use_base_row_id|true
+
+// All 21 rows are largely hardcoded - ref: 0F 8C ? ? ? ? 31 C0
+// Main ref: E8 ? ? ? ? 48 8B F8 48 85 C0 0F 84 ? ? ? ? B9
+
+add_column|DLCFlags|int
+add_column|Comment|string
+add_column|Unknown8|int[]     // 8 - These are shorts stored as ints, should always be 8 elements - ref: 48 89 5C 24 ? 48 89 74 24 ? 57 48 83 EC ? 48 8B 05 ? ? ? ? 31 F6
+add_column|Unknown10|int[]    // 10 - ref: 0F 4C 48 ? 45 33 D2
+add_column|Unknown18|short[]  // 18 - ref: 66 44 39 14 38
+add_column|Unknown20|int[]    // 20 - ref: 8B 1C 38 85 DB
+
+// Where are these read?
+add_column|Unknown24|int
+add_column|Unknown28|int
+add_column|Unknown2C|int
+add_column|Unknown30|int
+add_column|Unknown34|int
+add_column|Unknown38|int
+add_column|Unknown3C|int
+add_column|Unknown40|int
+add_column|Unknown44|int
+add_column|Unknown48|int
+add_column|Unknown4C|int
+add_column|Unknown50|int
+add_column|Unknown54|int
+add_column|Unknown58|int
+add_column|Unknown5C|int
+add_column|Unknown60|int
+add_column|Unknown64|int
+
+// 8 elements
+add_column|Unknown68|byte     // 68 - ref: 48 8D 57 ? 41 B8 ? ? ? ? 48 8D 8E
+add_column|Unknown69|byte
+add_column|Unknown6A|byte
+add_column|Unknown6B|byte
+add_column|Unknown6C|byte
+add_column|Unknown6D|byte
+add_column|Unknown6E|byte
+add_column|Unknown6F|byte
+
+add_column|Unknown70|byte
+add_column|Unknown71|byte
+add_column|Unknown72|byte
+add_column|Unknown73|byte
+add_column|Unknown74|int
+add_column|Unknown78|byte      // 78 - bool. ref: 40 38 70 ? 40 88 F0
+add_column|Unknown79|byte
+add_column|Unknown7A|byte
+add_column|Unknown7B|byte
+
+

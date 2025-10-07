@@ -1,0 +1,11 @@
+table_name|SoundEnhanced
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed
+use_base_row_id|true
+
+add_column|DLCFlags|int
+add_column|Comment|string
+add_column|SoundEnhancedResourceId|int    // 8 - ref: 8B 70 ? 48 8B 05 ? ? ? ? 48 85 C0 75 ? 48 8B 0D ? ? ? ? 48 85 C9 0F 84 ? ? ? ? 8B 15
+add_column|UnknownC|int                   // C - ref: 8B 47 ? 89 46 ? C6 46
+add_column|Unknown10|int                  // 10 - ref: 8B 48 ? 8B 15 ? ? ? ? 81 F2 ? ? ? ? E8, ref2: 83 78 ? ? 74 ? 89 5C 24
+add_column|Unknown14|string               

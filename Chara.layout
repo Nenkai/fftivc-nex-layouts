@@ -1,0 +1,9 @@
+table_name|Chara
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed
+use_base_row_id|true
+
+add_column|DLCFlags|int
+add_column|Unknown4|int       // 4 - ref: 8B 40 ? 89 47 ? 0F BF 45
+
+
