@@ -1,0 +1,9 @@
+table_name|ScreenMode
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed
+use_base_row_id|true
+
+// Unused table?
+
+add_column|DLCFlags|int
+add_column|Comment|string

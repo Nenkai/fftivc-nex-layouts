@@ -13,9 +13,12 @@ add_column|Unknown10|string|rel|-8
 
 // TODO: Figure these two columns's data type out
 add_column|Unknown14|short
-add_column|Unknown16|short
 
-add_column|Unknown18|int
+add_column|Unknown16|byte                  // 16 - noun bytes? ref: 8A 48 ? 8A 40 ? 88 43
+add_column|Unknown17|byte
+add_column|Unknown18|byte
+add_column|Unknown19|byte
+add_column|Unknown1A|short                 // 1A - padding?
 add_column|Comment|string
 add_column|UiId|int                        // 20 - ref: 8B 48 ? 48 8D 43 ? 48 83 63, ref 2: E8 ? ? ? ? 8A 0D ? ? ? ? 66 31 0D
 add_column|Unknown24|int[]

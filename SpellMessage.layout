@@ -1,0 +1,10 @@
+table_name|SpellMessage
+set_table_type|DoubleKeyed
+set_table_category|DoubleKeyed
+use_base_row_id|false
+
+// Table is used by searching Unknown4?
+
+add_column|DLCFlags|int
+add_column|Unknown4|int      // 4 - ref: 44 39 68 ? 74 ? 41 FF C6
+add_column|PanzerEntryId|int      // 8 - ref: 8B 50 ? 4C 8D 84 24

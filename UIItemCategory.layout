@@ -1,0 +1,13 @@
+table_name|UIItemCategory
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed_Localized
+use_base_row_id|true
+
+add_column|DLCFlags|int
+add_column|Name|string|rel          // 4 - ref: 48 83 C0 ? 48 63 10 48 03 D0 E8 ? ? ? ? 49 8B 8E
+add_column|Unknown8|string|rel|-4
+add_column|UnknownC|int
+add_column|Unknown10|int
+add_column|Unknown14|int            // 14 - IconEquipCategory%02d - ref: 44 8B 48 ? 4C 8D 05
+add_column|Unknown18|int            // 18 - ref: 8B 43 ? EB ? 33 C0 48 8B 5C 24
+add_column|Comment|string

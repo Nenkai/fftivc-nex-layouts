@@ -1,0 +1,13 @@
+table_name|Route
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed
+use_base_row_id|true
+
+add_column|DLCFlags|int
+add_column|Unknown4|string   // 4 - Show_R_%s & Hide_R_%s - ref: 4C 63 48 ? 4C 8D 05 ? ? ? ? 4C 03 C8 48 8D 4C 24
+add_column|Unknown8|int      // 8 - ref: 8B 40 ? 89 44 24 ? 4D 85 C0 78 ? 48 8B CF
+add_column|UnknownC|int      // C - ref: 8B 40 ? 45 33 E4
+add_column|Unknown10|string  // 10 - ref: 49 63 40 ? 49 03 C7
+add_column|Unknown14|string  
+add_column|Unknown18|string
+

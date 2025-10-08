@@ -1,0 +1,11 @@
+table_name|CharCLUT
+set_table_type|DoubleKeyed
+set_table_category|DoubleKeyed
+use_base_row_id|false
+
+add_column|DLCFlags|int
+add_column|Comment|string
+add_column|CLUTData|byte[]          // 8 - should always be 0x30 elements - ref: 49 03 C0 49 63 C9 48 83 3B ? 44 8A 54 01
+add_column|CharaColorSkinId|int     // 10 - ref: 8B 50 ? 48 83 C4 ? 5B E9 ? ? ? ? 32 C0 48 83 C4 ? 5B C3 CC
+add_column|UnkBool14|byte           // 14 - bool. ref: 80 78 ? ? 0F 84 ? ? ? ? 4D 85 C0
+// <implicit 3 byte padding>

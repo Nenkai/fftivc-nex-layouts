@@ -7,7 +7,9 @@ add_column|DLCFlags|int
 add_column|Unknown4|string|rel
 add_column|Unknown8|string|rel|-4
 add_column|UnknownC|string|rel|-8
-add_column|Unknown10|short         // 10 - Unused maybe?
-add_column|Unknown12|short         // 12 - Unused?
+add_column|Unknown10|byte          // 10 -  noun bytes? ref: 41 8A 41 ? 88 43 ? 41 8A 41 ? 88 43 ? 41 8A 41 ? 88 43
+add_column|Unknown11|byte
+add_column|Unknown12|byte
+add_column|Unknown13|byte
 add_column|UnkBool14|byte          // 14 - bool. ref: 8A 40 ? EB ? 32 C0 48 83 C4 ? 5B C3 CC E9
 // <implicit 3 byte padding>

@@ -1,0 +1,14 @@
+table_name|DifficultyLevel
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed_Localized
+use_base_row_id|true
+
+// Calculation @ sub_14F66DDC0 (48 89 5C 24 ? 48 89 74 24 ? 57 48 83 EC ? 83 3D ? ? ? ? ? 48 89 D3)
+
+add_column|DLCFlags|int           // 0
+add_column|Comment|string         // 4
+add_column|Unknown8|int           // 8 - ref (+ others): 44 8B 48 ? 44 8B 50
+add_column|UnknownC|int           // C
+add_column|Unknown10|int          // 10
+add_column|Unknown14|int          // 14
+add_column|UiId|int               // 18 - ref: 44 8B 60 ? 48 8B 05 ? ? ? ? 48 85 C0 75 ? 48 8B 0D ? ? ? ? 48 85 C9 74 ? 8D 50 ? E8 ? ? ? ? 48 89 05 ? ? ? ? 48 85 C0 74 ? 41 8B D4 48 8B C8 E8 ? ? ? ? 48 85 C0 75 ? 33 C0 EB ? 48 83 38 ? 7C ? 48 8B C8 E8 ? ? ? ? EB ? 49 8B C7

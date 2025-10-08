@@ -1,0 +1,8 @@
+table_name|CharaColorSkin
+set_table_type|DoubleKeyed
+set_table_category|DoubleKeyed
+use_base_row_id|true
+
+add_column|DLCFlags|int
+add_column|Comment|string
+add_column|UserSituationId|int        // 8 - ref: 8B 50 ? E8 ? ? ? ? 84 C0 74 ? 40 84 FF

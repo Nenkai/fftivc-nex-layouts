@@ -1,0 +1,25 @@
+table_name|PoachItem
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed_Localized
+use_base_row_id|true
+
+add_column|DLCFlags|int
+add_column|Comment|string
+add_column|Unknown8|string|rel         // 8 - ref: 49 63 43 ? 42 80 7C 18 ? ? 74 ? 4D 85 D2 78 ? 49 8B C8 E8 ? ? ? ? 4C 8B C8 49 8D 49 ? 48 63 01 48 03 C1 EB ? 4D 85 D2 78 ? 49 8B C8 E8 ? ? ? ? 4C 8B C8 49 8D 49 ? 48 63 41 ? EB ? 33 C0 48 83 C4 ? 5B C3 CC E9
+add_column|UnknownC|string|rel|-4      // C - ref: 48 63 41 ? 48 03 C1 EB ? 33 C0 48 83 C4
+add_column|Unknown10|string|rel|-8
+add_column|Unknown14|string|rel|-12    // 14 - ref: 48 63 48 ? 48 03 C8 48 2B D1 8A 01 3A 04 11 75 ? 48 FF C1 84 C0 75 ? 33 C0 EB ? 1B C0 83 C8 ? 85 C0 74 ? C1 E8 ? EB ? 42 8B 44 33 ? 42 39 04 33
+add_column|Unknown18|string|rel|-16    // 18 - ref: 48 63 50 ? 48 83 C0 ? 48 03 D0 74
+add_column|Unknown1C|byte              // 1C - noun bytes? ref: 8A 40 ? 88 43 ? 41 8A 41 ? 88 43 ? 41 8A 41 ? 88 43 ? 41 8A 41 ? EB
+add_column|Unknown1D|byte
+add_column|Unknown1E|byte
+add_column|Unknown1F|byte
+add_column|Unknown20|int
+add_column|Unknown24|int
+add_column|Unknown28|int               // 28 - ref: 8B 46 ? 99 29 D0
+add_column|Unknown2C|int               // 2C - ref: 8B 58 ? 0F B7 CB
+add_column|Unknown30|int               // 30 - ref: 8B 47 ? 89 83 ? ? ? ? 48 8B 5C 24 ? 48 83 C4 ? 5F C3 CC 48 8B C4
+add_column|Unknown34|byte              // 34 - used for icon. IconId = 503 + this. ref: 8A 40 ? 48 8D 54 24
+add_column|Unknown35|byte              // 35 - bool. ref: 8A 40 ? 41 38 44 24
+add_column|Unknown36|byte              // 36 - ref: 80 78 ? ? 74 ? 81 FF
+// <implicit 1 byte padding>

@@ -1,0 +1,11 @@
+table_name|Caption
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed
+use_base_row_id|false
+
+add_column|DLCFlags|int
+add_column|Comment|string
+
+// 113 - CaptionFreeWord
+// 115 - PlaceName
+add_column|UnionId|union        // 8 - ref: 66 83 78 ? ? 0F 85 ? ? ? ? 4D 85 C0 78 ? 48 8B CF E8 ? ? ? ? EB ? 48 8B C3 8B 78 ? 48 8B 05 ? ? ? ? 48 85 C0 75 ? 48 8B 0D ? ? ? ? 48 85 C9 0F 84 ? ? ? ? 8D 50 ? E8 ? ? ? ? 48 89 05 ? ? ? ? 48 85 C0 0F 84 ? ? ? ? 85 FF 0F 84 ? ? ? ? 8B D7 48 8B C8 E8 ? ? ? ? 4C 8B C0 48 85 C0 0F 84 ? ? ? ? 48 83 38

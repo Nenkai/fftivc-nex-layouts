@@ -16,6 +16,6 @@ add_column|Unknown10|int              // 24
 add_column|Unknown11|int              // 28
 add_column|TexturePartsIndex|uint     // 2C - ui/ffto/common/face/textureparts/wldface_%JOB_ID%_%INDEX%_uitx.utexpt
 add_column|uijobabilityhelp+Id|uint   // 30
-add_column|egg+Id|uint                // 34
+add_column|egg+Id|uint                // 34 - ref: 44 8B 60 ? 48 8B DF
 add_column|Unknown15|int              // 38
 add_column|HideJobTree|int            // 3C

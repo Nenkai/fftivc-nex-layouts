@@ -1,0 +1,16 @@
+table_name|ZodiacStone
+set_table_type|DoubleKeyed
+set_table_category|DoubleKeyed
+use_base_row_id|true
+
+add_column|DLCFlags|int
+add_column|Comment|string
+add_column|UserSituationId|int              // 8 - ref: 8B 50 ? E8 ? ? ? ? 84 C0 75 ? 48 8B 1D ? ? ? ? 48 FF C5
+add_column|ZodiacStoneOwnerTimeline|int     // C - ref: 8B 58 ? 48 8B 05 ? ? ? ? 48 85 C0 75 ? 48 8B 0D ? ? ? ? 48 85 C9 0F 84 ? ? ? ? BA ? ? ? ? E8 ? ? ? ? 48 89 05 ? ? ? ? 48 85 C0 0F 84 ? ? ? ? 85 DB
+add_column|Name|string|rel                  // 10 - ref: 48 83 C0 ? 48 63 18 48 03 D8 48 8B CF
+add_column|Summary|string|rel|-4
+add_column|Description|string|rel|-8
+add_column|IconId1|int                      // 1C - ref: 8B 48 ? 48 8D 55
+add_column|IconId2|int                      // 20 - ref: 8B 50 ? 48 8D 8F ? ? ? ? 41 B1
+add_column|UnkBool24|byte                   // 24 - bool. Can disable? ref: 80 78 ? ? 48 8D 4C 24
+// <implicit 3 byte padding>

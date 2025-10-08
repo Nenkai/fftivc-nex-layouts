@@ -1,0 +1,11 @@
+table_name|LauncherGuide
+set_table_type|DoubleKeyed
+set_table_category|DoubleKeyed_Localized
+use_base_row_id|true
+
+add_column|DLCFlags|int
+add_column|Unknown4|int
+add_column|Caption|string|rel
+add_column|UnknownC|byte   // C - booL. ref: 80 78 ? ? 74 ? 48 89 D9
+add_column|UnkBoolD|byte   // D - bool. ref: 38 58 ? 74 ? 48 8B 9F, ref2: 44 38 78 ? 74 ? 44 38 BF
+// <implicit 2 byte padding>
