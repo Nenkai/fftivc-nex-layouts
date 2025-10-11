@@ -1,0 +1,10 @@
+table_name|UICreditRow
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed
+use_base_row_id|true
+
+add_column|DLCFlags|int
+add_column|Type|int           // 4 - ref: 8B 50 ? 8B C2 83 E8
+add_column|Captions|string[]
+add_column|IconId|int         // 10 - ref: 41 83 78 ? ? 0F 95 C0
+add_column|Unknown14|int      // 14 - ref: 41 8B 40 ? 48 8D 55

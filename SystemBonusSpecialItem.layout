@@ -1,0 +1,17 @@
+table_name|SystemBonusSpecialItem
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed_Localized
+use_base_row_id|true
+
+add_column|DLCFlags|int
+add_column|Comment|string
+
+// 81 - Item
+// 120 - Unknown. 25 is subtracted to it. Maps to CharaColorSkin? The value of this is assigned in some array GameFlowManager
+// ref1: 66 83 78 ? ? 74 ? 66 83 78 ? ? 75 ? 4D 85 C9 78 ? 49 8B C8 E8 ? ? ? ? EB ? 49 8B C7
+// ref2: 66 83 78 ? ? 74 ? 66 83 78 ? ? 75 ? 4D 85 C9 78 ? 49 8B C8 E8 ? ? ? ? EB ? 49 8B C6
+// ref3: 66 83 78 ? ? 0F 85 ? ? ? ? 85 F6
+// ref4: 66 83 78 ? ? 75 ? 4D 85 C0
+add_column|UnionId|union
+add_column|Quantity|int
+add_column|Caption|string|rel

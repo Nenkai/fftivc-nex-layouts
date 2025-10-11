@@ -1,0 +1,9 @@
+table_name|LoreAffiliation
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed_Localized
+use_base_row_id|false
+
+add_column|DLCFlags|int
+add_column|Comment|string
+add_column|IconId|int            // 8 - ref: 8B 43 ? EB ? 33 C0 48 8B 4C 24 ? 48 33 CC E8 ? ? ? ? 48 8B 5C 24 ? 48 83 C4 ? 5F C3 CC CC 48 89 5C 24
+add_column|Caption|string|rel    // C - ref: 48 8D 4B ? 48 63 01 48 03 C1 EB ? 33 C0 48 8B 4C 24 ? 48 33 CC E8 ? ? ? ? 48 8B 5C 24 ? 48 83 C4 ? 5F C3 CC CC CC 48 89 5C 24 ? 57

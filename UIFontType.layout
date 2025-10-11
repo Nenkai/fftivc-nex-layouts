@@ -1,0 +1,11 @@
+table_name|UIFontType
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed_Localized
+use_base_row_id|true
+
+add_column|DLCFlags|int
+add_column|FontPath|string
+add_column|Unknown8|float       // 8 - ref: F3 44 0F 10 48 ? EB
+add_column|UnknownC|float       // C - ref: F3 0F 10 48 ? EB ? F3 0F 10 0D
+add_column|Unknown10|float      // 10 - ref: F3 0F 10 48 ? EB ? F3 0F 10 48
+add_column|Unknown14|float      // 14 - ref: F3 0F 10 40 ? EB ? 0F 57 C0 41 80 BD

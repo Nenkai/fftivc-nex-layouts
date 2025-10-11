@@ -1,0 +1,11 @@
+table_name|SystemBonusItem
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed_Localized
+use_base_row_id|true
+
+add_column|DLCFlags|int
+add_column|Title|string|rel
+add_column|Description|string|rel|-4    // 8 - ref: 48 63 48 ? 48 03 C8 48 83 C8
+// 314 - SystemBonusEntitlement
+add_column|UnionId|union
+add_column|Comment|string

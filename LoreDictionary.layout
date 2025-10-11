@@ -1,0 +1,30 @@
+table_name|LoreDictionary
+set_table_type|DoubleKeyed
+set_table_category|DoubleKeyed_Localized
+use_base_row_id|false
+
+add_column|DLCFlags|int          
+add_column|Comment|string
+add_column|SortOrder1|int                      // 8 - ref: 41 39 41 ? EB ? 4D 85 DB
+add_column|UserSituationId|int                 // C - ref: 8B 50 ? E8 ? ? ? ? 44 8A F8
+add_column|Type|int                            // 10 - Checked against 0-1-2-3. ref: 8B 40 ? EB ? 83 C8 ? 48 8B 4C 24
+add_column|LoreAffiliationId|int               // 14 - ref: 8B 78 ? 48 8B 05 ? ? ? ? 48 85 C0 75 ? 48 8B 0D ? ? ? ? 48 85 C9 74 ? BA ? ? ? ? E8 ? ? ? ? 48 89 05 ? ? ? ? 48 85 C0 74 ? 8B D7 48 8B C8 E8 ? ? ? ? 4C 8B C0 48 85 C0 74 ? 48 83 38 ? 7C ? 48 8B C8 E8 ? ? ? ? 48 85 C0 74 ? 49 83 38 ? 7C ? 49 8B C8 E8 ? ? ? ? 48 8B D8 48 8D 4B ? 48 63 01 48 03 C1 EB ? 33 C0 48 8B 4C 24 ? 48 33 CC E8 ? ? ? ? 48 8B 5C 24 ? 48 83 C4 ? 5F C3 CC CC CC 48 89 5C 24 ? 57
+add_column|LoreNameAliasId|int                 // 18 - ref: 8B 78 ? 48 8B 05 ? ? ? ? 48 85 C0 75 ? 48 8B 0D ? ? ? ? 48 85 C9 74 ? BA ? ? ? ? E8 ? ? ? ? 48 89 05 ? ? ? ? 48 85 C0 74 ? 8B D7 48 8B C8 E8 ? ? ? ? 4C 8B C0 48 85 C0 74 ? 48 83 38 ? 7C ? 48 8B C8 E8 ? ? ? ? 48 85 C0 74 ? 49 83 38 ? 7C ? 49 8B C8 E8 ? ? ? ? 48 8B D8 48 8D 4B ? 48 63 01 48 03 C1 EB ? 33 C0 48 8B 4C 24 ? 48 33 CC E8 ? ? ? ? 48 8B 5C 24 ? 48 83 C4 ? 5F C3 CC CC CC 48 89 5C 24 ? 48 89 74 24
+add_column|Unknown1C|int                       // 1C - ref: 8B 40 ? EB ? 33 C0 48 8B 4C 24 ? 48 33 CC E8 ? ? ? ? 48 83 C4 ? 5B C3 CC 40 53
+add_column|Unknown20|int                       // 20 - ref: 8B 43 ? EB ? 33 C0 48 8B 4C 24 ? 48 33 CC E8 ? ? ? ? 48 83 C4 ? 5B C3 CC 40 53 48 83 EC ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 44 24 ? 44 8B 42 ? 48 8D 4C 24 ? 8B 12 48 83 64 24 ? ? E8 ? ? ? ? 4C 8B 44 24 ? 4D 85 C0 0F 84 ? ? ? ? 49 83 38 ? 7C ? 49 8B C8 E8 ? ? ? ? 48 85 C0 74 ? 48 83 64 24 ? ? 48 8D 1D ? ? ? ? 49 83 38 ? 7C ? 49 8B C8 E8 ? ? ? ? 49 8B C8 4C 8B C8 E8 ? ? ? ? EB ? 4C 8B CB 48 8B C3 45 8B 41 ? 48 8D 4C 24 ? 8B 50 ? E8 ? ? ? ? 4C 8B 44 24 ? 4D 85 C0 74 ? 49 83 38 ? 7C ? 49 8B C8 E8 ? ? ? ? 48 85 C0 74 ? 49 83 38 ? 7C ? 49 8B C8 E8 ? ? ? ? 48 8B D8 0F B6 43
+add_column|IconId1|int                         // 24 - ref: 8B 40 ? EB ? 33 C0 48 8B 4C 24 ? 48 33 CC E8 ? ? ? ? 48 83 C4 ? 5B C3 CC 48 89 5C 24
+add_column|IconId2|int                         // 28 - ref: 8B 58 ? 85 DB B8
+add_column|Unknown2C|int
+add_column|Unknown30|int
+add_column|FullName_Title|string|rel           // 34 - ref: 48 83 C0 ? 48 63 10 48 03 D0 74
+add_column|Description|string|rel|-4           // 38 - ref: 48 63 50 ? 48 03 D0 EB ? 48 8B D3
+add_column|NormalizedName|string|rel|-8        // 3C - ref: 48 63 50 ? 48 83 C0 ? 48 03 D0 EB
+add_column|LastName_FirstName|string|rel|-12   // 40 - ref: 4C 63 48 ? 48 83 C0 ? 4C 03 C8 48 85 DB
+add_column|Unknown44|int                       // 44 - ref: 8B 78 ? 85 FF 74 ? 48 8D 15
+add_column|SortOrder2|int                      // 48 - ref: 41 39 41 ? E9 ? ? ? ? B0
+add_column|Unknown4C|byte
+add_column|UnkBool4D|byte                      // 4D - bool. ref: 8A 5E ? EB ? 40 8A DF
+add_column|UnkBool4E|byte                      // 4E - bool. ref: 80 78 ? ? 75 ? FF C7
+add_column|UnkBool4F|byte                      // 4F - bool. ref: 8A 58 ? EB ? 41 8A DE 48 8D 35, ref 2: 8A 43 ? EB ? 32 C0
+add_column|Unknown50|byte                      // 50 - ref: 44 0F B6 48 ? EB, ref 2: 0F B6 43 ? EB
+// <implicit 3 byte padding>

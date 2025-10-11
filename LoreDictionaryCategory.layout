@@ -1,0 +1,9 @@
+table_name|LoreDictionaryCategory
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed_Localized
+use_base_row_id|false
+
+add_column|DLCFlags|int
+add_column|Comment|string
+add_column|Unknown8|int             // 8 - unused?
+add_column|Category|string|rel      // C - ref: 48 83 C0 ? 48 63 10 48 03 D0 E8 ? ? ? ? 4C 8B 4F

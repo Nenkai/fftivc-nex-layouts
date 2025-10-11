@@ -1,0 +1,10 @@
+table_name|UIElementAttribute
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed_Localized
+use_base_row_id|true
+
+add_column|DLCFlags|int
+add_column|Name|string|rel
+add_column|Unknown8|byte     // 8 - ref: 0F BE 40 ? EB
+add_column|Unknown9|byte     // 9 - ref: 0F BE 40 ? 66 41 3B C4
+// <implicit 2 byte padding>

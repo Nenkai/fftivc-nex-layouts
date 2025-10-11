@@ -1,0 +1,23 @@
+table_name|TelemetryAchievement
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed_Localized
+use_base_row_id|false
+
+add_column|DLCFlags|int
+add_column|Comment|string
+add_column|Unknown8|int
+add_column|UnknownC|int                 // C - ref: 8B 50 ? 74 ? 48 8B 0D
+add_column|IDString|string              // 10 - ref: 48 63 48 ? 48 03 C8 74 ? 80 39 ? 74 ? 4D 85 C0
+add_column|Unknown14|int
+add_column|Unknown18|int
+add_column|Unknown1C|int                // 1C - ref: 8B 40 ? 89 44 24 ? 4D 85 C0 78 ? 48 8B CB
+add_column|Unknown20|int                // 20 - ref: 83 78 ? ? 0F 95 C0 EB ? 32 C0
+add_column|Unknown24|int                // 24 - ref: 44 3B 60 ? 75
+add_column|Unknown28|int                // 28 - ref: 8B 40 ? 89 03 B0 ? EB ? 32 C0 48 8B 5C 24 ? 48 83 C4 ? 5F C3 CC 48 89 5C 24
+add_column|QuantityString|string        // 2C - ref: 48 63 48 ? 48 03 C8 E8 ? ? ? ? 4C 8B 03
+add_column|Name|string|rel              // 30 - ref: 48 8D 4B ? 48 63 01 48 03 C1 48 83 C4
+add_column|Description|string|rel|-4
+add_column|Unknown38|int                // 38 - ref: 8B 40 ? 89 44 24 ? 48 83 F9
+add_column|Unknown3C|byte               // 3C - ref: 8A 40 ? 88 44 24 ? 4D 85 C0 78 ? 48 8B CB E8 ? ? ? ? EB ? 49 8B C5 8A 40
+add_column|Unknown3D|byte               // 3D - ref: 8A 40 ? 88 44 24 ? 4D 85 C0 78 ? 48 8B CB E8 ? ? ? ? EB ? 49 8B C5 49 8B 0E
+// <implicit 2 byte padding>

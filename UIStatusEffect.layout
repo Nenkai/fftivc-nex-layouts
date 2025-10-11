@@ -1,0 +1,16 @@
+table_name|UIStatusEffect
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed_Localized
+use_base_row_id|false
+
+add_column|DLCFlags|int
+add_column|Comment|string
+add_column|Type|int                // C - ref: 83 78 ? ? 75 ? 4D 85 C0 78 ? 48 8B CF
+add_column|Name|string|rel
+add_column|Caption|string|rel|-4
+add_column|Unknown14|int           // 14 - ref: 8B 40 ? EB ? 83 C8 ? 48 83 C4 ? 5B
+add_column|Unknown18|int           // 18 - not 59 = BattleSignalId? but not parsed as ushort so not an union. ref: 41 39 41 ? 74 ? 48 8B 05 ? ? ? ? 41 FF C6
+add_column|Unknown1C|int           // 1C - ref: 8B 40 ? EB ? 31 C0 89 04 2F
+add_column|Unknown20|short         // 20 - ref: 66 39 68 ? 7E
+add_column|Unknown22|byte          // 22 - ref: 44 38 58 ? 75 ? 48 85 FF
+// <implicit 1 byte padding>
