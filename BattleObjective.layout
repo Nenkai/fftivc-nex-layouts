@@ -5,6 +5,6 @@ use_base_row_id|true
 
 add_column|DLCFlags|int
 add_column|Name|string|rel
-add_column|Unknown8|int          // 8 - ref: 48 89 5C 24 ? 57 48 83 EC ? 48 8B 05 ? ? ? ? 48 89 D7
-add_column|UnkBoolC|byte          // C - bool. ref: 40 38 78 ? 74 ? 40 B7
+add_column|Unknown8|int              // 8 - ref: 48 89 5C 24 ? 57 48 83 EC ? 48 8B 05 ? ? ? ? 48 89 D7
+add_column|IsProtectionMission|byte  // C - bool. ref: 40 38 78 ? 74 ? 40 B7
 // <implicit 3 byte padding>

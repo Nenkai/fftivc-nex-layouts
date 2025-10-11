@@ -17,4 +17,6 @@ add_column|UiStatusEffectId|int           // 1C - ref: 8B 53 ? 48 8B 0D ? ? ? ? 
 add_column|Comment|string
 add_column|UiItemCategoryId|int           // 24 - ref: 8B 78 ? 48 8B 05 ? ? ? ? 48 85 C0 75 ? 48 8B 0D ? ? ? ? 48 85 C9 74 ? 8D 50 ? E8 ? ? ? ? 48 89 05 ? ? ? ? 48 85 C0 74 ? 8B D7 48 8B C8 E8 ? ? ? ? 4C 8B C0
 add_column|SortOrder|int                  // 28 - ref: 41 39 4C 24
-add_column|Unknown2C|int
+add_column|Unknown2C|byte
+add_column|IsRandomDamage|byte            // 2D - ref: 80 78 ? ? 74 ? C6 86
+// <implicit 2 byte padding>

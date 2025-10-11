@@ -7,7 +7,7 @@ use_base_row_id|true
 add_column|DLCFlags|int
 
 // Hardcoded checks
-add_column|Unknown4|int                    // 4 - ref: 8B 50 ? 44 8B C2
+add_column|IconId|int                      // 4 - ref: 8B 50 ? 44 8B C2
 
 add_column|Name|string|rel
 add_column|Description|string|rel|-4

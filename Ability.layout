@@ -6,7 +6,7 @@ use_base_row_id|true
 // ref: 40 53 48 83 EC ? 48 8B 05 ? ? ? ? 89 CB
 
 add_column|DLCFlags|int
-add_column|Unknown4|int                    // 4 - ref: 40 53 48 83 EC ? 44 8A 42
+add_column|IconId|int                      // 4 - ref: 40 53 48 83 EC ? 44 8A 42, ref2: 8B 50 ? E8 ? ? ? ? 49 8B 4D
 add_column|Name|string|rel
 add_column|Description|string|rel|-4
 add_column|Unknown10|string|rel|-8
@@ -21,13 +21,13 @@ add_column|Unknown19|byte
 add_column|Unknown1A|short                 // 1A - padding?
 add_column|Comment|string
 add_column|UiId|int                        // 20 - ref: 8B 48 ? 48 8D 43 ? 48 83 63, ref 2: E8 ? ? ? ? 8A 0D ? ? ? ? 66 31 0D
-add_column|Unknown24|int[]
-add_column|Unknown2C|int                   // 2C - ref: 8B 48 ? 85 C9 74 ? E8 ? ? ? ? 4C 8B C8
+add_column|BattleVoiceIds|int[]            // 24 - ref: 83 78 ? ? 0F 8E ? ? ? ? 4D 85 D2, ref 2: 49 03 C2 8B 3C 88
+add_column|UiId|int                        // 2C - ref: 8B 48 ? 85 C9 74 ? E8 ? ? ? ? 4C 8B C8
 add_column|Unknown30|int                   // 30 - determines 'Good' or 'Bad'? ref: 8B 70 ? 48 8D 15 ? ? ? ? 83 FE
 add_column|Unknown34|int
 add_column|AbilityReactionVoiceTypeId|int  // 38 - ref: 44 8B 78 ? 48 8B 05 ? ? ? ? 48 85 C0 75 ? 48 8B 0D ? ? ? ? 48 85 C9 0F 84
 add_column|Unknown3C|int                   // 3C - ref: 83 78 ? ? 0F 84 ? ? ? ? E9, ref 2: 8B 48 ? B0 ? 83 F9
-add_column|Unknown40|byte
-add_column|Unknown41|byte
-add_column|Unknown42|byte
-add_column|Unknown43|byte                  // 43 - ref: 8A 50 ? 8A C2 48 83 C4
+add_column|JpCost1|byte
+add_column|JpCost2|byte
+add_column|IsRandomDamage|byte             // 42 - ref: 8A 48 ? 88 8E ? ? ? ? 48 8B 8E
+add_column|IsRandomStatus|byte             // 43 - ref: 8A 50 ? 8A C2 48 83 C4
