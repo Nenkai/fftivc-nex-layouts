@@ -72,7 +72,7 @@ add_column|Unknown75|byte
 add_column|Unknown76|byte
 add_column|Unknown77|byte
 
-add_column|Unknown78|bool  // 78 - bool. ref: 40 38 70 ? 40 88 F0
+add_column|Unknown78|byte  // 78 - bool. ref: 40 38 70 ? 40 88 F0
 add_column|Unknown79|byte  // probably padding?
 add_column|Unknown7A|byte  // probably padding?
 add_column|Unknown7B|byte  // probably padding?
