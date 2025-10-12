@@ -1,0 +1,9 @@
+table_name|ZodiacStoneOwnerTimeline
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed
+use_base_row_id|true
+
+add_column|DLCFlags|int
+add_column|Comment|string
+add_column|Unknown8|string
+add_column|UnknownC|string

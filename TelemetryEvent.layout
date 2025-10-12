@@ -1,0 +1,15 @@
+table_name|TelemetryEvent
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed
+use_base_row_id|true
+
+define_struct|UnkStruct|
+add_struct_column|Unknown0|int
+add_struct_column|Unknown4|int
+end_struct|
+
+add_column|DLCFlags|int
+add_column|Comment|string
+add_column|Unknown8|int
+add_column|UnknownC|UnkStruct[]
+

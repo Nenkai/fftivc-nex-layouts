@@ -1,0 +1,16 @@
+table_name|UnitHelpMessage
+set_table_type|DoubleKeyed
+set_table_category|DoubleKeyed
+use_base_row_id|false
+
+add_column|DLCFlags|int
+add_column|Unknown4|int
+add_column|Unknown8|int
+add_column|PanzerEntryId1|int
+add_column|PanzerEntryId2|int
+add_column|PanzerEntryId3|int
+add_column|PanzerEntryId4|int
+add_column|PanzerEntryId5|int
+add_column|PanzerEntryId6|int
+add_column|PanzerEntryId7|int
+add_column|PanzerEntryId8|int

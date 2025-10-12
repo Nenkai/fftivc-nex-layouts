@@ -1,0 +1,16 @@
+table_name|UIPadGuide
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed
+use_base_row_id|true
+
+add_column|DLCFlags|int
+add_column|Unknown4|int
+add_column|Unknown8|int
+add_column|UnknownC|int
+add_column|Unknown10|int
+add_column|Unknown14|int
+add_column|Unknown18|int
+add_column|Unknown1C|int
+add_column|Unknown20|int
+add_column|Unknown24|int
+add_column|Unknown28|int
