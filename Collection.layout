@@ -10,4 +10,8 @@ add_column|UnknownC|int                   // C - ref: 8B 48 ? E8 ? ? ? ? 85 C0 7
 add_column|Unknown10|int
 add_column|Name|string|rel
 add_column|Description|string|rel|-4
+add_column|Unknown1C|string|rel|-8
+add_column|Unknown20|int
+add_column|Unknown24|int
+add_column|Unknown28|int
 

@@ -1,7 +1,7 @@
 table_name|Journal
 set_table_type|SingleKeyed
 set_table_category|SingleKeyed_Localized
-use_base_row_id|true
+use_base_row_id|false
 
 add_column|DLCFlags|int
 add_column|Comment|string

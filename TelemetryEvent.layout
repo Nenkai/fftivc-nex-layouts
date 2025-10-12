@@ -1,7 +1,7 @@
 table_name|TelemetryEvent
 set_table_type|SingleKeyed
 set_table_category|SingleKeyed
-use_base_row_id|true
+use_base_row_id|false
 
 define_struct|UnkStruct|
 add_struct_column|Unknown0|int

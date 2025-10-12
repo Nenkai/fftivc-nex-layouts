@@ -1,6 +1,6 @@
 table_name|DifficultyLevel
 set_table_type|SingleKeyed
-set_table_category|SingleKeyed_Localized
+set_table_category|SingleKeyed
 use_base_row_id|true
 
 // Calculation @ sub_14F66DDC0 (48 89 5C 24 ? 48 89 74 24 ? 57 48 83 EC ? 83 3D ? ? ? ? ? 48 89 D3)

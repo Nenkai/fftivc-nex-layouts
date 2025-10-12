@@ -7,7 +7,7 @@ add_column|DLCFlags|int
 add_column|Description|string|rel
 add_column|Unknown8|int
 add_column|UnknownC|int
-add_column|Unknown10|int
+add_column|Unknown10|string
 add_column|PlaceNameId|int      // 14 - ref: 8B 48 ? E8 ? ? ? ? 41 B9 ? ? ? ? 48 8D 4C 24 ? 4C 8B C0 41 8D 51 ? E8 ? ? ? ? 48 8B 55 ? C7 45
 add_column|Unknown18|string     // 18 - ref: 4C 63 48 ? 4C 03 C8 0F 84
 add_column|Unknown1C|int

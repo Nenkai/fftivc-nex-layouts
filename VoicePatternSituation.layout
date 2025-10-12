@@ -1,6 +1,6 @@
 table_name|VoicePatternSituation
 set_table_type|DoubleKeyed
-set_table_category|DoubleKeyed_Localized
+set_table_category|DoubleKeyed
 use_base_row_id|true
 
 add_column|DLCFlags|int

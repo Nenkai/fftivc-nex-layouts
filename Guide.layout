@@ -1,7 +1,7 @@
 table_name|Guide
 set_table_type|SingleKeyed
 set_table_category|SingleKeyed_Localized
-use_base_row_id|true
+use_base_row_id|false
 
 // Hardcoded keys: 107, 113, 187, 225, 230, 3001
 

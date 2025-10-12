@@ -15,4 +15,3 @@ add_column|NovelSoundId|short     // 20 - ref: 0F B7 40 ? 48 8D 8B
 // <implicit 2 byte padding>
 add_column|Unknown24|int
 add_column|Unknown28|int
-add_column|Unknown2C|int

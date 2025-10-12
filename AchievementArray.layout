@@ -3,7 +3,12 @@ set_table_type|SingleKeyed
 set_table_category|SingleKeyed
 use_base_row_id|true
 
+define_struct|UnkStruct|
+add_struct_column|Unknown0|int
+add_struct_column|Unknown4|int
+end_struct|
+
 add_column|DLCFlags|int
 add_column|AchievementIds1|int[]
-add_column|AchievementIds2|int[]
+add_column|AchievementIds2|UnkStruct[]
 add_column|AchievementIds3|int[]
