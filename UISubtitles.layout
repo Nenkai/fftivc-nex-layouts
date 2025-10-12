@@ -9,7 +9,7 @@ add_column|Subtitle|string|rel      // 8
 add_column|UnknownC|float           // C
 add_column|Unknown10|int            // 10
 add_column|Unknown14|int            // 14
-add_column|Unknown18|int            // 18
+add_column|ScionLabelsId|int        // 18 - ref: 39 68 ? 74 ? 4D 85 C0 78 ? 48 8B CB E8 ? ? ? ? EB ? 48 8B C7
 add_column|Unknown1C|int            // 1C
 add_column|Unknown20|int            // 20
 add_column|Unknown24|int            // 24

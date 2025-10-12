@@ -1,0 +1,10 @@
+table_name|DebugMap
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed
+use_base_row_id|true
+
+add_column|DLCFlags|int                // 00
+add_column|Comment|string              // 04
+add_column|Comment2|string             // 08
+add_column|UnknownC|int
+

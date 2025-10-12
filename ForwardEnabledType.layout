@@ -1,0 +1,9 @@
+table_name|ForwardEnabledType
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed
+use_base_row_id|true
+
+// Table appears to be unused
+
+add_column|DLCFlags|int
+add_column|Comment|string

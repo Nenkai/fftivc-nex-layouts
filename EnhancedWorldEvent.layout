@@ -1,0 +1,16 @@
+table_name|EnhancedWorldEvent
+set_table_type|TripleKeyed
+set_table_category|TripleKeyed
+use_base_row_id|false
+
+// Handled at 48 89 5C 24 ? 48 89 6C 24 ? 48 89 74 24 ? 57 41 54 41 55 41 56 41 57 48 83 EC ? 48 8B 05 ? ? ? ? 44 8B E1
+
+add_column|DLCFlags|int
+add_column|Type|short        // 4 - no more than 34. ref: 44 0F BF 50 ? 41 8B CA
+// <implicit 2 byte padding>
+add_column|Unknown8|short[]
+add_column|Unknown10|int
+add_column|Unknown14|int
+add_column|Unknown18|int    // 18 - no more than 47. ref: 8B 48 ? 83 F9 ? 0F 84
+add_column|Unknown1C|int    // 1C - ref: 8B 48 ? 85 C9 75 ? 33 C0
+

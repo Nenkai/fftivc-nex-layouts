@@ -1,0 +1,22 @@
+table_name|SortieConfirm
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed
+use_base_row_id|false
+
+add_column|DLCFlags|int
+
+// All these are fetched at 48 89 5C 24 ? 48 89 6C 24 ? 48 89 74 24 ? 57 41 54 41 55 41 56 41 57 48 83 EC ? 8B D9
+add_column|MapId|int
+add_column|Unknown8|int
+add_column|UnknownC|int
+add_column|EventUIId|int
+add_column|Unknown14|int
+add_column|MaxUnitUIId|int
+add_column|Unknown1C|int
+add_column|ThreatRatingUIId|int
+
+add_column|Unknown24|int
+add_column|Unknown28|int
+add_column|Unknown2C|byte       // 2C - ref: 80 78 ? ? 0F 84 ? ? ? ? 83 FB
+// <implicit 3 byte padding>
+

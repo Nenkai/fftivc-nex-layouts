@@ -1,0 +1,8 @@
+table_name|ScionLabels
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed
+use_base_row_id|false
+
+add_column|DLCFlags|int
+add_column|ScionFilesId|int    // 4 - ref: 8B 68 ? 48 8B 05 ? ? ? ? 48 85 C0 75 ? 48 8B 0D ? ? ? ? 48 85 C9 0F 84 ? ? ? ? BA
+add_column|PanzerEntryId|int   // 8 - ref: 8B 40 ? 89 46 ? 48 83 3B
