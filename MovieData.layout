@@ -1,0 +1,22 @@
+table_name|MovieData
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed
+use_base_row_id|true
+
+// Ids appear for the most part hardcoded (at least row id 1 and 6)
+
+add_column|DLCFlags|int
+add_column|Comment|string
+add_column|MovieFilePath|string   // 8 - ref: 48 63 78 ? 48 03 F8
+add_column|UnknownC|string
+// 192 - ClassicSubtitles
+// 209 - FFTOSubtitles
+add_column|Unknown10|union        // 10 - ref: 41 0F BF 4F ? 81 E9
+add_column|Unknown18|string       // 18 - ref: 49 63 40 ? 49 03 C0 74 ? 44 38 30
+add_column|MovieSoundFileId|int   // 1C - sound/movie/movie%04d/ + "movie%04d_bgm.sab" or "movie%04d_voice.sab" or "movie%04d_se.sab" - ref: 8B 78 ? 48 8B CE 44 8B C7
+add_column|Unknown20|string       // 20 - ref: 4C 63 78 ? 4C 03 F8
+add_column|UnkBool24|byte         // 24 - bool. ref: 45 38 71 ? 44 0F 44 C0 48 8D 05
+add_column|UnkBool25|byte         // 25 - bool. ref: 45 38 71 ? 44 0F 44 C0 44 89 46 ? 4C 39 33 7C ? 48 8B CB E8 ? ? ? ? 4C 8B C8 EB
+add_column|UnkBool26|byte         // 26 - bool. ref: 45 38 71 ? 44 0F 44 C0 44 89 46 ? 4C 39 33 7C ? 48 8B CB E8 ? ? ? ? 4C 8B C8 48 8D 0D
+// <implicit 1 byte padding>
+

@@ -1,0 +1,13 @@
+table_name|UDSActivity
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed
+use_base_row_id|true
+
+// What on earth is this table? Doesn't seem to be used/referenced at all.
+
+add_column|DLCFlags|int
+add_column|Comment|string
+add_column|Unknown8|int
+add_column|UnknownC|int[]
+add_column|Unknown14|int[]
+

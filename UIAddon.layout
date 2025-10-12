@@ -1,0 +1,33 @@
+table_name|UIAddon
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed_Localized
+use_base_row_id|true
+
+// Row ids are largely hardcoded (per controller?)
+
+add_column|DLCFlags|int
+add_column|Unknown4|int
+add_column|UiFilePath|string
+add_column|UnknownC|byte
+add_column|UnknownD|byte
+add_column|UnknownE|byte
+add_column|UnknownF|byte
+add_column|Unknown10|byte
+add_column|Unknown11|byte
+add_column|Unknown12|byte
+add_column|Unknown13|byte
+add_column|Unknown14|byte
+add_column|Unknown15|byte
+add_column|Unknown16|byte
+add_column|Unknown17|byte
+add_column|Unknown18|byte
+add_column|Unknown19|byte
+add_column|Unknown1A|byte
+add_column|Unknown1B|byte
+add_column|Unknown1C|byte
+add_column|Unknown1D|byte
+add_column|Unknown1E|byte
+add_column|Unknown1F|byte
+add_column|Unknown20|byte
+// <implicit 3 byte padding>
+

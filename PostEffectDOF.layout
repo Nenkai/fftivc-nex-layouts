@@ -1,0 +1,15 @@
+table_name|PostEffectDOF
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed
+use_base_row_id|true
+
+// Ids appear for the most part hardcoded (at least row id 1 and 6)
+
+add_column|DLCFlags|int
+add_column|Comment|string
+add_column|Unknown8|float
+add_column|UnknownC|float
+add_column|Unknown10|float
+add_column|Unknown14|float
+add_column|Unknown18|int
+

@@ -1,0 +1,19 @@
+table_name|UIButtonGuide
+set_table_type|DoubleKeyed
+set_table_category|DoubleKeyed
+use_base_row_id|false
+
+add_column|DLCFlags|int
+add_column|Unknown4|int
+add_column|Unknown8|int
+add_column|UnknownC|int
+add_column|Unknown10|int
+add_column|Unknown14|int
+add_column|Unknown18|string
+add_column|Unknown1C|int
+add_column|Unknown20|int
+add_column|Unknown24|byte
+add_column|Unknown25|byte
+// padding?
+add_column|Unknown26|byte
+add_column|Unknown27|byte

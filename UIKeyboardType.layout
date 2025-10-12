@@ -1,0 +1,12 @@
+table_name|UIKeyboardType
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed
+use_base_row_id|true
+
+add_column|DLCFlags|int
+add_column|Comment|string
+add_column|Unknown8|int
+add_column|UnknownC|int
+add_column|Unknown10|int
+add_column|Unknown14|int
+add_column|Unknown18|int

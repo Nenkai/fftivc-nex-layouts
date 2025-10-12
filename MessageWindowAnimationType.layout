@@ -1,0 +1,16 @@
+table_name|MessageWindowAnimationType
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed
+use_base_row_id|true
+
+add_column|DLCFlags|int
+add_column|Unknown4|string
+add_column|Unknown8|string
+add_column|Comment|string
+add_column|Unknown10|float
+add_column|Unknown14|float
+add_column|Unknown18|byte
+add_column|Unknown19|byte
+add_column|Unknown1A|byte
+add_column|Unknown1B|byte
+

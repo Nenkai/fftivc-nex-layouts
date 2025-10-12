@@ -1,0 +1,8 @@
+table_name|ConfigCategory
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed
+use_base_row_id|true
+
+add_column|DLCFlags|int
+add_column|ConfigItemIds|int[]
+add_column|NameUIId|int       // C - ref: 8B 58 ? 48 8B 05 ? ? ? ? 48 85 C0 75 ? 4D 85 FF
