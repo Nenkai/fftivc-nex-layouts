@@ -15,11 +15,11 @@ add_column|Unknown1D|byte
 add_column|Unknown1E|byte
 add_column|Unknown1F|byte
 add_column|Unknown20|int
-add_column|Unknown24|int
-add_column|Unknown28|int               // 28 - ref: 8B 46 ? 99 29 D0
+add_column|Cost|int
+add_column|SellPrice|int               // 28 - ref: 8B 46 ? 99 29 D0
 add_column|Unknown2C|int               // 2C - ref: 8B 58 ? 0F B7 CB
-add_column|Unknown30|int               // 30 - ref: 8B 47 ? 89 83 ? ? ? ? 48 8B 5C 24 ? 48 83 C4 ? 5F C3 CC 48 8B C4
-add_column|Unknown34|byte              // 34 - used for icon. IconId = 503 + this. ref: 8A 40 ? 48 8D 54 24
+add_column|IconId|int                  // 30 - ref: 8B 47 ? 89 83 ? ? ? ? 48 8B 5C 24 ? 48 83 C4 ? 5F C3 CC 48 8B C4
+add_column|IsRare|byte                 // 34 - used for icon. IconId = 503 + this. ref: 8A 40 ? 48 8D 54 24
 add_column|Unknown35|byte              // 35 - bool. ref: 8A 40 ? 41 38 44 24
 add_column|Unknown36|byte              // 36 - ref: 80 78 ? ? 74 ? 81 FF
 // <implicit 1 byte padding>

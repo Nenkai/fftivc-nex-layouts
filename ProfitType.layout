@@ -1,0 +1,10 @@
+table_name|ProfitType
+set_table_type|SingleKeyed
+set_table_category|SingleKeyed
+use_base_row_id|true
+
+add_column|DLCFlags|int
+add_column|Unknown4|int    
+add_column|ProfitBonusItemId1|int   // 8 - ref (for all 3): 45 8B 46 ? 8B C7
+add_column|ProfitBonusItemId2|int
+add_column|ProfitBonusItemId3|int
