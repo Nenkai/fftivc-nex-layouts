@@ -4,9 +4,9 @@ set_table_category|SingleKeyed
 use_base_row_id|true
 
 add_column|DLCFlags|int
-add_column|Unknown4|int
-add_column|Unknown8|int
-add_column|UnknownC|int
+add_column|TextUIId|int
+add_column|Option1TextUIId|int
+add_column|Option2TextUIId|int
 add_column|Unknown10|int
 add_column|Unknown14|int
 add_column|Unknown18|int

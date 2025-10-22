@@ -3,6 +3,8 @@ set_table_type|DoubleKeyed
 set_table_category|DoubleKeyed
 use_base_row_id|false
 
+// 501/502/503/504 are known to be hardcoded
+
 add_column|DLCFlags|int
 add_column|Unknown4|int
 add_column|Unknown8|int
